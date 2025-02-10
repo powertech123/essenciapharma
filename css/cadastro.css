@@ -1,0 +1,216 @@
+/*HEADER*/
+
+header{
+  background-color: #14316B;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 7%;
+  border-bottom: #81c5fd solid;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header .logo img{
+  height: 5rem;
+  border-radius: 100%;
+}
+
+.nav {
+  display: inline-block;
+  font-family: Roboto Slab, serif;
+  font-size: 1.2em;
+  background-color: #a8dcf5;
+  color: rgb(47, 61, 107);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+
+#menu p a {
+  font-weight: normal;
+  font-family: Roboto Slab, serif;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 3px 25px;
+  border-top: 2px solid #14316B;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Estilo para o título h1 (centralizado e com espaçamento) */
+h1 {
+  font-family: Roboto Slab, serif;
+  font-size: 2.5em;
+  color: #14316B;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* ÍCONES DO CADASTRO, BUSCA E CARRINHO*/
+a {
+  display: inline-block;
+  font-family: Roboto Slab, serif;
+  background-color: #81c5fd;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: 10px; /* Espaço acima do link */
+}
+
+.menu p a:hover{
+  background: #6f94e9;
+  transform: scale(1.1);       
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* Responsividade para dispositivos menores (ajusta o tamanho das fontes e espaçamento) */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em; /* Reduz o tamanho do título em telas pequenas */
+  }
+
+  p {
+      font-size: 1em; /* Ajusta o tamanho da fonte dos parágrafos */
+  }
+
+  #conteudo, #teste, footer {
+      width: 90%;  /* Adapta a largura para telas menores */
+      max-width: none; /* Remove o limite de largura */
+  }
+
+  a {
+      padding: 8px 15px;  /* Ajusta o tamanho do botão para telas pequenas */
+  }
+}
+
+/* ESTILO DE TODA A PÁGINA*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: rgb(47, 61, 107);
+}
+
+p {
+  font-size: 16px;
+}
+
+form.cadastro {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Estilos para os campos de entrada */
+.campo {
+  margin-bottom: 15px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.campo input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.campo input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: rgb(47, 61, 107);
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #6f94e9;
+}
+
+/* Estilos para campos lado a lado */
+.campo-duplo {
+  display: flex;
+  gap: 20px;
+}
+
+.campo-duplo .campo {
+  flex: 1;
+}
+
+/* BARRA DE ROLAGEM */
+  
+  /* Define o estilo da barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Define o estilo do trilho da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor do trilho */
+    border-radius: 10px;
+}
+
+/* Define o estilo da parte que desliza da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do thumb */
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; /* Adiciona uma borda para o thumb */
+}
+
+/* Define o estilo do thumb quando está sendo hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do thumb quando passa o mouse */
+}
+
+/* Personalizando a barra de rolagem para a horizontal */
+::-webkit-scrollbar-horizontal {
+    height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(47, 61, 107);
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  position: relative;
+  bottom: 10;
+  width: 100%;
+}
+
+.copy{
+  color: #fff;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+   <!--HEADER/CABEÇALHO-->
+   <header class="header">
+    <div>
+        <a href="index.html" class="logo">
+            <img src="imagens/Logo.jpg" alt="">
+        </a>
+    </div>
+    <!--TAG NAV: usada qdo queremos navegar dentro do SITE-->
+    <nav class="menu"> 
+        <div class="hover">
+            <p>
+                <a href="index.html" title="Página Inicial">HOME</a>
+                <a href="servicos.html" title="Serviços">SERVIÇOS</a>
+                <a href="sobre.html" title="Sobre">SOBRE</a>
+                <a href="produtos.html" title="Produtos">PRODUTOS</a>
+                <a href="localização.html" title="localização">LOCALIZAÇÃO</a>
+            </p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="icons">
+        <a class="social" href="cadastro.html"> <img width="40" height="40" src="imagens/USER.png"alt="login"></a>
+        <a class="social" href="pesquisa.html"> <img width="40" height="40" src="imagens/SEARCH.png"alt="login"> </a>
+        <a class="social" href="carrinho.html"> <img width="40" height="40" src="imagens/CART.png"alt="login"> </a>
+    </div>
+</header>
+
+
+    
+<h1>Faça o cadastro para receber mensalmente informações sobre nossos produtos e descontos.</h1>
+
+<!-- AQUI INICIA O FORMULÁRIO -->
+<form class="cadastro" method="post">
+    <div class="campo">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Ex: Emanueli Roseiro" size="37">
+    </div>
+
+    <div class="campo">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="exemplo@exemplo@gmail.com" size="37">
+    </div> 
+
+    <div class="campo-duplo">
+        <div class="campo">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" placeholder="000.000.000-00" size="37">
+        </div>
+
+        <div class="campo">
+            <label for="tel">Celular:</label>
+            <input type="tel" name="tel" placeholder="(00) 00000-0000" size="37">
+        </div>
+    </div>
+
+    <div class="campo">
+        <label for="data_nascimento">Data de nascimento:</label>
+        <input type="date" name="data_nascimento" placeholder="dd/mm/aaaa" size="37">
+    </div>
+
+    <div class="campo">
+        <label for="genero">Escolha seu gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br>
+
+        <input type="radio" id="prefiro_nao_dizer" name="genero" value="prefiro_nao_dizer">
+        <label for="prefiro_nao_dizer">Prefiro não dizer</label><br>
+    </div>
+
+    <div class="campo-duplo">
+        <div class="campo">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" placeholder="Senha" size="37">
+        </div>
+
+        <div class="campo">
+            <label for="confirmar_senha">Confirmar Senha:</label>
+            <input type="password" name="confirmar_senha" placeholder="Confirmar Senha" size="37">
+        </div>
+    </div>
+
+    <input type="submit" value="Enviar">
+</form>
+
+<br>
+
+<div id="mensagem-confirmacao" style="display: none; color: green; font-weight: bold; margin-top: 10px;">
+    Cadastro realizado com sucesso!
+</div>
+
+<footer class="footer">
+    <p class="copy">&copy; 2024 Essência Pharma. Todos os direitos reservados.</p>
+</footer>  
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Adicione seu estilo conforme necessário */
+body {
+    font-family: Roboto Slab, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #14316B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: #81c5fd solid;
+    position: ;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.cart-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #6f94e9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(15, 18, 168);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cart-container h1 {
+    
+    color: black;
+}
+
+.cart-item h3 {
+    margin: 0;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+

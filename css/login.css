@@ -1,0 +1,28 @@
+/*HEADER PARA TODAS AS PÁGINAS*/
+.header{
+    background-color: #14316B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: #81c5fd solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header .logo img{
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.banner{
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    background: url(Designer\ \(1\).jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}

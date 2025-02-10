@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/carrinho.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Carrinho de Compras</title>
+    <header class="header">
+        <div>
+            <a href="index.html" class="logo">
+                <img src="imagens/Logo.jpg" alt="">
+            </a>
+        </div>
+        <!--TAG NAV: usada qdo queremos navegar dentro do SITE-->
+        <nav class="menu"> 
+            <div class="hover">
+                <p>
+                    <a href="index.html" title="Página Inicial">HOME</a>
+                    <a href="servicos.html" title="Serviços">SERVIÇOS</a>
+                    <a href="sobre.html" title="Quem Somos?">SOBRE</a>
+                    <a href="produtos.html" title="Produtos">PRODUTOS</a>
+                    <a href="localização.html" title="localização">LOCALIZAÇÃO</a>
+                </p>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="icons">
+            <a class="social" href="cadastro.html"> <img width="40" height="40" src="imagens/USER.png"alt="login"></a>
+            <a class="social" href="pesquisa.html"> <img width="40" height="40" src="imagens/SEARCH.png"alt="login"> </a>
+            <a class="social" href="carrinho.html"> <img width="40" height="40" src="imagens/CART.png"alt="login"> </a>
+        </div>
+    </header>
+    
+</head>
+<body>
+    
+    <div class="cart-container">
+        <h1>Carrinho de Compras</h1>
+    
+        <div id="cartItems">
+            <!-- Os produtos serão inseridos aqui -->
+        </div>
+    
+        <div class="total-price" id="totalPrice">Total: R$ 0,00</div>
+        <br>
+        <button onclick="checkout()">Finalizar Compra</button>
+        <button onclick="clearCart()">Excluir Carrinho</button> <!-- Novo botão para excluir o carrinho -->
+    </div>
+    
+    <script>
+    // Função para carregar os produtos do carrinho armazenado no localStorage
+    function loadCart() {
+        // Recupera o carrinho armazenado no localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+        // Se o carrinho estiver vazio
+        if (cart.length === 0) {
+            document.getElementById('cartItems').innerHTML = "<p>Seu carrinho está vazio.</p>";
+            document.getElementById('totalPrice').innerText = "Total: R$ 0,00";
+            return;
+        }
+    
+        let total = 0;
+        let cartItemsContainer = document.getElementById('cartItems');
+        cartItemsContainer.innerHTML = ""; // Limpa o conteúdo atual
+    
+        // Cria um item de carrinho para cada produto
+        cart.forEach(item => {
+            const cartItem = document.createElement('div');
+            cartItem.classList.add('cart-item');
+            cartItem.innerHTML = `
+                <h3>${item.name}</h3>
+                <span>${item.price}</span>
+            `;
+            cartItemsContainer.appendChild(cartItem);
+    
+            // Atualiza o total
+            total += parseFloat(item.price.replace('R$', '').replace(',', '.'));
+        });
+    
+        // Exibe o total no carrinho
+        document.getElementById('totalPrice').innerText = `Total: R$ ${total.toFixed(2).replace('.', ',')}`;
+    }
+    
+    // Função para finalizar a compra (simplesmente limpa o carrinho)
+    function checkout() {
+        localStorage.removeItem('cart');
+        alert('Compra finalizada com sucesso!');
+        window.location.href = 'index.html'; // Redireciona de volta para a página principal
+    }
+    
+    // Função para excluir o carrinho
+    function clearCart() {
+        localStorage.removeItem('cart');  // Limpa o carrinho do localStorage
+        loadCart();  // Atualiza a página para refletir que o carrinho está vazio
+        alert('Carrinho excluído com sucesso!');
+    }
+    
+    // Carrega os itens do carrinho quando a página do carrinho é carregada
+    window.onload = loadCart;
+    </script>

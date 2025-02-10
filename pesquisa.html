@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Produtos</title>
+    <style>
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .search-box {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .search-btn {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #14316B;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .search-btn:hover {
+            background-color: #79a1e2;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 3.5px solid #79a1e2;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .product-card h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .product-card p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-box" placeholder="Pesquisar produtos...">
+        <button class="search-btn" onclick="searchProducts()">🔍</button>
+    </div>
+
+    <div id="productList" class="product-list">
+        <!-- Os produtos serão listados aqui -->
+        <div class="product-card">
+            <h3>Vacina contra Tétano</h3>
+            <p>Proteja-se contra o Tétano com a vacina que oferece alta eficácia.</p>
+        </div>
+        <div class="product-card">
+            <h3>Antisséptico</h3>
+            <p>Previne infecções com propriedades antimicrobianas.</p>
+        </div>
+        <div class="product-card">
+            <h3>Vitaminas C</h3>
+            <p>Fortaleça seu sistema imunológico com vitaminas essenciais.</p>
+        </div>
+        <div class="product-card">
+            <h3>Protetor Solar</h3>
+            <p>Proteja sua pele dos raios UV com alta proteção.</p>
+        </div>
+        <div class="product-card">
+            <h3>Pomada para Dor</h3>
+            <p>Alívio rápido para dores musculares e articulares.</p>
+        </div>
+    </div>
+
+    <script>
+        function searchProducts() {
+            // Pega o valor do campo de pesquisa
+            var input = document.getElementById('searchInput').value.toLowerCase();
+            var products = document.getElementsByClassName('product-card');
+
+            // Filtra os produtos com base no texto digitado
+            for (var i = 0; i < products.length; i++) {
+                var productName = products[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (productName.includes(input)) {
+                    products[i].style.display = ''; // Exibe o produto
+                } else {
+                    products[i].style.display = 'none'; // Oculta o produto
+                }
+            }
+        }
+    </script>
+
+    <p>
+        <h3 class="botão">Para voltar ao MENU, clique <a href="index.html" title="Essência Pharma">aqui</a></h3>
+    </p>
+
+
+</body>
+</html>

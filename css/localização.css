@@ -1,0 +1,170 @@
+body {
+    font-family:  Roboto Slab, serif;
+    
+}
+
+.header{
+    background-color: #14316B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: #81c5fd solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header .logo img{
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.banner {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.banner h1 {
+    color: rgb(47, 61, 107);
+    margin: 0;
+    font-size: 2.5em;
+}
+.banner p {
+    font-size: 1.2em;
+}
+.banner button {
+    background-color: white;
+    color: #81c5fd;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.banner button:hover {
+    background-color: #e7e7e7;
+}
+#conteudo{
+    font-family: Roboto Slab, serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; 
+}
+dt{ /*Linha dos títulos*/
+    background-color: #ffffff;
+    padding: 7px;
+}
+  /* Estilos para o parágrafo */
+  p {
+    font-family: Roboto Slab, serif;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /*PERSONALIZAR O MENU*/
+  a {
+    display: inline-block;
+    font-family: Roboto Slab, serif;
+    font-size: 1.2em;
+    background-color: #a8dcf5;  /* Cor de fundo do WhatsApp */
+    color: rgb(47, 61, 107);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+
+  .menu p a:hover{
+    background: #6f94e9;
+    transform: scale(1.1);       
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+.icons {
+    display: flex;               /* Organiza os ícones em linha */
+    justify-content: center;     /* Centraliza os ícones horizontalmente */
+    gap: 20px;                   /* Adiciona espaçamento entre os ícones */
+    margin-top: 20px;            /* Adiciona um espaço superior */
+}
+
+/* Estilo dos links (que contêm os ícones) */
+.social {
+    text-decoration: none;       /* Remove o sublinhado padrão dos links */
+    display: inline-block;       /* Faz com que o link ocupe apenas o necessário para a imagem */
+    transition: transform 0.3s;  /* Suaviza a animação de transformação */
+}
+
+/* Estilo dos ícones (imagens) */
+.social img {
+    width: 40px;                /* Define o tamanho do ícone */
+    height: 40px;               
+    border-radius: 50%;         
+    transition: transform 0.3s, box-shadow 0.3s;  /* Suaviza animação de transformação e sombra */
+}
+
+/* Efeito de hover nos ícones (aumenta o ícone ao passar o mouse e adiciona sombra) */
+.social:hover img {
+    transform: scale(1.1);       /* Aumenta o ícone em 10% */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave ao redor */
+}
+
+/* Efeito de hover nos links (quando passa o mouse sobre o ícone) */
+.social:hover {
+    transform: translateY(-5px);  /* Leve elevação do ícone ao passar o mouse */
+}
+
+
+/* BARRA DE ROLAGEM */
+  
+  /* Define o estilo da barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Define o estilo do trilho da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor do trilho */
+    border-radius: 10px;
+}
+
+/* Define o estilo da parte que desliza da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do thumb */
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; /* Adiciona uma borda para o thumb */
+}
+
+/* Define o estilo do thumb quando está sendo hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do thumb quando passa o mouse */
+}
+
+/* Personalizando a barra de rolagem para a horizontal */
+::-webkit-scrollbar-horizontal {
+    height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+.titulo{
+    color: rgb(47, 61, 107);
+}
+
+footer {
+    background-color: rgb(47, 61, 107);
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    position: relative;
+    bottom: 10;
+    width: 100%;
+  }
+
+.copy{
+    color: #fff;
+}

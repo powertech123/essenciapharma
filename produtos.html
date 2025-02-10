@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/produtos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <title>Tabela de Preços - Farmácia</title>
+</head>
+
+<body>
+    <!--HEADER/CABEÇALHO-->
+    <header class="header">
+        <div>
+            <a href="index.html" class="logo">
+                <img src="imagens/Logo.jpg" alt="">
+            </a>
+        </div>
+        <!--TAG NAV: usada qdo queremos navegar dentro do SITE-->
+        <nav class="menu"> 
+            <div class="hover">
+                <p>
+                    <a href="index.html" title="Página Inicial">HOME</a>
+                    <a href="servicos.html" title="Serviços">SERVIÇOS</a>
+                    <a href="sobre.html" title="Sobre">SOBRE</a>
+                    <a href="produtos.html" title="Produtos">PRODUTOS</a>
+                    <a href="localização.html" title="localização">LOCALIZAÇÃO</a>
+                </p>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="icons">
+            <a class="social" href="cadastro.html"> <img width="40" height="40" src="imagens/USER.png"alt="login"></a>
+            <a class="social" href="pesquisa.html"> <img width="40" height="40" src="imagens/SEARCH.png"alt="login"> </a>
+            <a class="social" href="carrinho.html"> <img width="40" height="40" src="imagens/CART.png"alt="login"> </a>
+        </div>
+    </header>
+    
+    <header class="titulo">
+        <h1>Farmácia Online</h1>
+        <p>Compre os melhores produtos de saúde</p>
+    </header>
+
+    <!--TÍTULO-->
+
+    <div class="banner">
+        <h1>NOSSOS PRODUTOS</h1>
+        <p>Clique no botão e descubra as melhores promoções em produtos de farmácia!</p>
+        <a href="promocoes.html">
+        <button class="add-to-cart" onclick="addToCart('Carmed Chocottone', 'R$ 29,90')">Ver promoções</button>
+    </a>
+    </div>
+</div>
+    
+    <!--TESTE CARROSSEL-->
+    <div class="container">
+        <!-- Produto 1 -->
+        <div class="product-card">
+            <img src="imagens/protetor .webp" alt="Produto 1">
+            <div class="produ-name">Shampoo High 500ml</div>
+            <div class="descrição">Cabelo mais limpo e brilhoso.</div>
+            <div class="preço">R$ 19,90</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Shampoo high 500ml', 'R$ 19,90')">Adicionar ao Carrinho</button>
+            </a>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="product-card">
+            <img src="imagens/Cha2.jpg" alt="Produto 2">
+            <div class="produ-name">Chá de Camomila Alange</div>
+            <div class="descrição">Indicado para dores musculares.</div>
+            <div class="preço">R$ 29,90</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Chá de Camomila Alange', 'R$ 29,90')">Adicionar ao
+                    Carrinho</button>
+            </a>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="product-card">
+            <img src="imagens/vitamina_c_bio_c_1g_30_comprimidos_efervescentes_sem_acucar_71_1_20200724181355.webp"
+                alt="Produto 3">
+            <div class="produ-name">Vitamina C 100mg</div>
+            <div class="descrição">Suplemento para fortalecer o sistema imunológico.</div>
+            <div class="preço">R$ 39,90</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Vitamina C 100mg', 'R$ 39,90')">Adicionar ao
+                    Carrinho</button>
+            </a>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="product-card">
+            <img src="imagens/remedio1.webp" alt="Produto 4">
+            <div class="produ-name">Antisséptico Bactericida</div>
+            <div class="descrição">Ideal para limpeza e desinfecção de ferimentos.</div>
+            <div class="preço">R$ 14,90</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Antisséptico Bactericida', 'R$ 14,90')">Adicionar ao
+                    Carrinho</button>
+            </a>
+        </div>
+        <!-- Produto 5 -->
+        <div class="product-card">
+            <img src="imagens/protetor_solar_nivea_sun_fps_50_protect_e_hidrata_100ml_8470_1_bcb61d76b159276743145915bb7193dc.webp"
+                alt="Produto 4">
+            <div class="produ-name">Protetor Solar Nivea Sun</div>
+            <div class="descrição">Protetor Solar Corporal Hidratação FPS 50 Nivea Sun 200ml</div>
+            <div class="preço">R$ 49,90</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Protetor Solar Nivea Sun', 'R$ 49,90')">Adicionar ao
+                    Carrinho</button>
+            </a>
+        </div>
+        <!-- Produto 6 -->
+        <div class="product-card">
+            <img src="imagens/embalagemcalmingcream.jpg" alt="Produto 4">
+            <div class="produ-name">Creme Facial Creamy</div>
+            <div class="descrição">Creme Hidratante Facial Creamy Skincare Calming Cream 40g</div>
+            <div class="preço">R$52,99</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Creme Facial Creamy', 'R$ 52,99')">Adicionar
+                    aoCarrinho</button></a>
+        </div>
+        <!-- Produto 6 -->
+        <div class="product-card">
+            <img src="imagens/81VX9LBqeTL._AC_UF1000,1000_QL80_.jpg" alt="Produto 4">
+            <div class="produ-name">Curativo Topz</div>
+            <div class="descrição">Curativo Topz Patrulha Canina 25 Unidades.</div>
+            <div class="preço">R$ 14,99</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Curativo Topz', 'R$ 14,99')">Adicionar
+                    aoCarrinho</button></a>
+        </div>
+        <!-- Produto 6 -->
+        <div class="product-card">
+            <img src="imagens/b001340638403f39f1573f445adc1f12.jfif" alt="Produto 4">
+            <div class="produ-name">Prudence</div>
+            <div class="descrição">Camisinha Preservativo Prudence Neon com 3 Unidades.</div>
+            <div class="preço">R$ 60,90</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Prudence', 'R$ 60,90')">Adicionar ao
+                    Carrinho</button></a>
+        </div>
+        <!-- Produto 7 -->
+        <div class="product-card">
+            <img src="imagens/dipirona.webp" alt="Produto 4">
+            <div class="produ-name">Dipirona Monoidratada</div>
+            <div class="descrição">Dipirona Monoidratada 1g Medley - 10 Comprimidos</div>
+            <div class="preço">R$ 17,72</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Dipirona Monoidratada', 'R$ 17,72')">Adicionar ao Carrinho</button>
+            </a>
+        </div>
+        <!-- Produto 8 -->
+        <div class="product-card">
+            <img src="imagens/dorflex.jpg" alt="Produto 4">
+            <div class="produ-name">Dorflex</div>
+            <div class="descrição">Dorflex Analgésico e Relaxante Muscular 36 comprimidos</div>
+            <div class="preço">R$18,99</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Dorflex', 'R$ 18,99')">Adicionar ao Carrinho</button>
+            </a>
+        </div>
+        <!-- Produto 9 -->
+        <div class="product-card">
+            <img src="imagens/anticoncepcional-biovet-preve-gest-5-mg-6621_18849.webp" alt="Produto 4">
+            <div class="produ-name">Opill</div>
+            <div class="descrição">Anticoncepcional Biovet Preve-gest 5 Mg</div>
+            <div class="preço">R$ 38,19</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Opill', 'R$ 38,19')">Adicionar ao Carrinho</button>
+            </a>
+        </div>
+        <!-- Produto 10 -->
+        <div class="product-card">
+            <img src="imagens/alprazolam.webp" alt="Produto 4">
+            <div class="produ-name">Alprazolam</div>
+            <div class="descrição">Alprazolam 0,25mg 30 comprimidos Medley Genérico</div>
+            <div class="preço">R$ 60,90</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Alprazolam', 'R$ 60,90')">Adicionar ao Carrinho</button>
+            </a>
+        </div>
+        <!-- Produto 11 -->
+        <div class="product-card">
+            <img src="imagens/Carmed Hello Kitty.webp" alt="Produto 4">
+            <div class="produ-name">Carmed Hello Kitty</div>
+            <div class="descrição">Hidratante Labial Carmed Hello Kitty Maçã do Amor 10g</div>
+            <div class="preço">R$ 49,90</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Carmed Hello Kitty', 'R$ 49,90')">Adicionar ao
+                    Carrinho</button>
+            </a>
+        </div>
+        <!-- Produto 12 -->
+        <div class="product-card">
+            <img src="imagens/bjs.webp" alt="Produto 4">
+            <div class="produ-name">Carmed Fini Beijos</div>
+            <div class="descrição">Hidratante Labial Carmed Fini Beijos com Cor Efeito Gloss 10g</div>
+            <div class="preço">R$29,90</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Carmed Fini Beijos', 'R$ 29,90')">Adicionar ao
+                    Carrinho</button>
+            </a>
+        </div>
+        <!-- Produto 13 -->
+        <div class="product-card">
+            <img src="imagens/Carmed Melância.webp" alt="Produto 4">
+            <div class="produ-name">Carmed Melância</div>
+            <div class="descrição">Hidratante Labial Carmed Melancia 10G</div>
+            <div class="preço">R$20,90</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Carmed Melância', 'R$ 20,90')">Adicionar ao
+                    Carrinho</button>
+            </a>
+        </div>
+        <!-- Produto 14 -->
+        <div class="product-card">
+            <img src="imagens/Carmed Bauducco.jpg" alt="Produto 4">
+            <div class="produ-name">Carmed Chocottone</div>
+            <div class="descrição">Hidratante Labial Carmed Chocottone Incolor 10g</div>
+            <div class="preço">R$29,90</div>
+            <a href="carrinho.html">
+                <button class="add-to-cart" onclick="addToCart('Carmed Chocottone', 'R$ 29,90')">Adicionar ao
+                    Carrinho</button>
+            </a>
+        </div>
+        <br>
+        <!--PROMOÇÕES-->
+
+        <script>
+            // Função para adicionar produto ao carrinho
+            function addToCart(productName, productPrice) {
+                // Cria um objeto com o nome e o preço do produto
+                const product = {
+                    name: productName,
+                    price: productPrice
+                };
+
+                // Verifica se já existe um carrinho no localStorage
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                // Adiciona o novo produto ao carrinho
+                cart.push(product);
+
+                // Armazena o carrinho atualizado no localStorage
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                // Redireciona para a página do carrinho
+                window.location.href = 'carrinho.html';
+            }
+        </script>
+
+    <footer class="footer">
+        <p class="copy">&copy; 2024 Essência Pharma. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

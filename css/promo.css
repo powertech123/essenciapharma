@@ -1,0 +1,142 @@
+/*Menu - Parte de cima*/
+
+/*HEADER PARA TODAS AS PÁGINAS*/
+.header{
+    background-color: #14316B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: #81c5fd solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.nav {
+    display: inline-block;
+    font-family: Roboto Slab, serif;
+    font-size: 1.2em;
+    background-color: #a8dcf5;
+    color: rgb(47, 61, 107);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/*Ícones*/
+.icons {
+    display: flex;               /* Organiza os ícones em linha */
+    justify-content: center;     /* Centraliza os ícones horizontalmente */
+    gap: 20px;                   /* Adiciona espaçamento entre os ícones */
+    margin-top: 20px;            /* Adiciona um espaço superior */
+}
+
+/*Estilo dos links (que contêm os ícones)*/
+.social {
+    background-color: #a8dcf5;
+    border-radius: 100%;
+    text-decoration: none;       /* Remove o sublinhado padrão dos links */
+    display: inline-block;       /* Faz com que o link ocupe apenas o necessário para a imagem */
+    transition: transform 0.3s;  /* Suaviza a animação de transformação */
+}
+
+/*Estilo dos ícones (imagens)*/
+.social img {
+    width: 30px;                /* Define o tamanho do ícone */
+    height: 30px;               /* Mantém a proporção do ícone */
+    border-radius: 50%;         /* Torna os ícones redondos */
+    transition: transform 0.3s, box-shadow 0.3s;  /* Suaviza animação de transformação e sombra */
+}
+
+/* Efeito de hover nos ícones (aumenta o ícone ao passar o mouse e adiciona sombra) */
+.social:hover img {
+    transform: scale(1.1);       /* Aumenta o ícone em 10% */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave ao redor */
+}
+
+/*Conteudo*/
+.product-card{
+        margin-top: 3px;
+        border: rgb(127, 185, 250) solid 3.5px;
+        margin-bottom: 25px;
+        border-radius: 0 0 5px 5px; /*A PARTE QUE ENGLOBA AS FRASES*/
+        /*VALORES DO PADDING
+        1º valor superior
+        2º valor esquerda 
+        3º valor inferior 
+        4º valor direita*/ 
+        padding: 20px 20px 0; /*A PARTE QUE DA ESPAÇO ENTRE AS FRASES COM OS NEGOCIO*/
+}
+
+.product-card .text{
+    text-align: left;
+}
+
+
+/*Carrossel*/
+.carousel-container {
+    padding-top: 1.5rem;
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    display: none;
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 251, 251, 0);
+        color: black;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        z-index: 1;
+    }
+
+    .left-arrow {
+        left: 10px;
+    }
+
+    .right-arrow {
+        right: 10px;
+    }
+
+    .arrow:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+
+
+
+
